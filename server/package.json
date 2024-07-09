@@ -1,0 +1,17 @@
+{
+  "name": "ludo_server",
+  "version": "1.0.0",
+  "description": "A web socket server for ludo",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js"
+  },
+  "author": "Jack Kraus",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}

@@ -4,8 +4,9 @@
   "description": "A web socket server for ludo",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "nodemon -e ts  --exec \"npm run start\"",
-    "start": "tsc && node dist/app.js"
+    "dev": "nodemon -e ts --exec \"npm run start\"",
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "author": "Jack Kraus",
   "license": "MIT",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "@types/uuid": "^10.0.0",
+    "dotenv": "^16.4.5",
     "nodemon": "^3.1.4",
     "socket.io": "^4.7.5",
     "uuid": "^10.0.0",

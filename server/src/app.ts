@@ -106,4 +106,5 @@ io.on("connection", (socket: Socket) => {
     });
 });
 
-httpServer.listen(4000);
+const PORT : number = parseInt(process.env.PORT ?? "4000");  // Use the PORT environment variable or default to 3000
+httpServer.listen(PORT, "0.0.0.0", 511, () => console.log(`Server running on port ${PORT}`));
